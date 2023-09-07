@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2849147338.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+    <script src="Book.js" defer></script>
+</head>
+<body id="books_body">
+    <section>
+        <nav>
+            <div class="nav_container">
+                <img src="./asset/LogoMakr-7jhDXv (1).png" class="logo" alt="">
+                <ul class="nav__links">
+                    <li class="navb"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="navb"><a href=" https://www.youtube.com/c/AngelbeatSenpai" class="nav__link">Contact</a></li>
+                    <li class="navb"><a href="#" class="nav__link nav__link--primary">Books</a></li>
+                </ul>
+          
+                <div class="harmburger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+        </div>
+        </nav>
+    </section>
+     <main id="books__main">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="books__header">
+                        <h2 class="section__title books__header--title">
+                            All <span class="pink">Book</span>
+                        </h2>
+                        <select id="filter" onchange="filterBooks(event)">
+                            <option value="" disabled selected>Sort</option>
+                            <option value="LOW_TO_HIGH">Price, Low to High</option>
+                            <option value="HIGH_TO_LOW">Price, High to Low</option>
+                            <option value="Rating">Rating</option>
+                        </select>
+                    </div>
+                 
+                    <div class="books">
+                  <i class="fas fa-spinner books__loading--spinner"></i>
+<!--                             
+                            <div class="book__rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                              </div> -->
+                            
+                              <!-- <div class="book">
+                                <figure class="book_img--wrapper">
+                                    <img class="book__img" src="asset/The Villain's Sister Suffers Today.png" alt="">
+                                </figure>
+                                <div class="book__title">
+                                    The Villain's Sister Suffers Today
+                                </div>
+                                <div class="book__rating">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                </div>
+                                <div class="price">
+                                    <span class="book__price">$59</span> $13
+                                </div>
+                            </div> -->
+
+                        
+                   
+                    </div>
+                </div>
+            </div>
+        </section>
+     </main>
+     <footer>
+        <div class="containr">
+            <div class="row row__column">
+                <a href="#">
+                    <figure class="footer__logo">
+                        <img src="asset/LogoMakr-7jhDXv (1).png" class="footer__logo--img" alt="">
+                    </figure>
+                </a>
+                <div class="footer__list">
+                    <a href="index.html" class="footer__link">Home</a>
+                    <a href="" class="footer__link no-cursor">About</a>
+                    <a href="#feature"class="footer__link">Book</a>
+                    <a href=" https://www.youtube.com/c/AngelbeatSenpai" class="footer__link "target="_blank">Contact</a>
+                </div>
+                <div class="footer__copyright">
+                    Copyright &copy; 2023 Library
+                </div>
+            </div>
+        </div>
+     </footer>
+     <!-- <script src="index.js"></script> -->
+</body>
+</html>
